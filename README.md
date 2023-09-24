@@ -7,9 +7,21 @@
 # Getting started
 - Clone the repository
 ```
-git clone git@github.com:ElkostVN/elkost-template.git <app-name>
+git clone git@github.com:ElkostVN/elkost-discord-template.git
 ```
 - Install dependencies
 ```
 cd <app-name> && pnpm install
 ```
+
+## Project Structure
+The folder structure of this app is explained below:
+
+| Name | Description |
+| ----------------------| --------------------------------------------------------------------------------------------- |
+| **node_modules**      | Contains all npm dependencies
+| **src**               | Contains template source code
+| **--components**      | Contains all components of template 
+| **--lib**             | Contains all libraries of template
+| **--types**           | Contains all types of template
+| **--utils**           | Contains all utilities

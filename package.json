@@ -1,13 +1,14 @@
 {
-  "name": "@elkost-template",
-  "version": "1.0.0",
+  "name": "@elkost/discord-template",
+  "version": "0.0.0",
   "description": "",
   "main": "bin/index.js",
   "scripts": {
     "start": "node bin/index.js",
     "develop": "nodemon bin/index.js",
     "build": "tsc --build --clean && tsc --build",
-    "build:develop": "tsc --watch"
+    "build:develop": "tsc --watch",
+    "postinstall": "pnpm run build"
   },
   "author": {
     "email": "k.r.ilyin@gmail.com",
@@ -16,7 +17,11 @@
   "license": "ISC",
   "type": "module",
   "imports": {
-    "#src/*": "./bin/*"
+    "#src/*": "./bin/*",
+    "#lib/*": "./bin/lib/*",
+    "#utils/*": "./bin/utils/*",
+    "#types/*": "./bin/types/*",
+    "#components/*": "./bin/components/*"
   },
   "devDependencies": {
     "@types/node": "^20.6.5",

@@ -45,6 +45,18 @@
         "paths": {
 			"#src/*": [
 				"./src/*"
+			],
+			"#lib/*": [
+                "./src/lib/*"
+            ],
+			"#utils/*": [
+				"./src/utils/*"
+			],
+			"#types/*": [
+				"./src/types/*"
+			],
+			"#components/*": [
+				"./src/components/*"
 			]
 		}
 	},
