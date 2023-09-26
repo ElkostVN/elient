@@ -7,7 +7,7 @@
 # Getting started
 - Clone the repository
 ```
-git clone git@github.com:ElkostVN/elkost-discord-template.git
+git clone git@github.com:ElkostVN/elient.git
 ```
 - Install dependencies
 ```
