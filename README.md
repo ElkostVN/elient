@@ -1,7 +1,7 @@
 # Project Template
 
 # Pre-requisites
-- Install [Node.js](https://nodejs.org/en/) LTS or higher
+- Install [Node.js](https://nodejs.org/en/) >= 20.6.1
 - Install [PNPM](https://www.npmjs.com/package/pnpm) >=8.6.12
 
 # Getting started
@@ -21,7 +21,6 @@ The folder structure of this app is explained below:
 | ----------------------| --------------------------------------------------------------------------------------------- |
 | **node_modules**      | Contains all npm dependencies
 | **src**               | Contains template source code
-| **--components**      | Contains all components of template 
 | **--lib**             | Contains all libraries of template
 | **--types**           | Contains all types of template
 | **--utils**           | Contains all utilities
