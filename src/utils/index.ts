@@ -1,0 +1,1 @@
+export * from '#utils/decorators/event.decorator.js';
