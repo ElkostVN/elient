@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node bin/index.js",
     "develop": "nodemon bin/index.js",
-    "build": "tsc --build --clean && tsc --build tsconfig.esm.json tsconfig.cjs.json tsconfig.types.json",
+    "build": "tsc --build --clean && tsc --build",
     "build:develop": "tsc --watch",
     "postinstall": "pnpm run build"
   },
@@ -36,10 +36,9 @@
   },
   "exports": {
     "./*": {
-      "types": "./bin/types/*.d.ts",
-      "require": "./bin/cjs/*.js",
-      "import": "./bin/esm/*.js",
-      "default": "./bin/esm/*.js"
+      "types": "./bin/*.d.ts",
+      "import": "./bin/*.js",
+      "default": "./bin/*.js"
     }
   },
   "devDependencies": {

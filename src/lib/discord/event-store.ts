@@ -11,7 +11,7 @@ export const eventStore = new class EventStore extends AEventStore {
 		this.storage.set(event.name, event);
 	}
 
-	private validateEvent (event: TDecoratedEvent): void {
+	public validateEvent (event: TDecoratedEvent): void {
 		if (
 			typeof event['name'] !== 'string'
 			|| String(event['name']).length === 0

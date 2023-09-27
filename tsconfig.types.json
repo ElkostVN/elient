@@ -1,9 +1,0 @@
-{
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-        "outDir": "./bin/types",
-        "declaration": true,
-        "emitDeclarationOnly": true,
-		"verbatimModuleSyntax": false,
-    }
-}

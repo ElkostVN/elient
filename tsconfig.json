@@ -27,6 +27,7 @@
 		"emitDecoratorMetadata": true, /* Emit design-type metadata for decorated declarations in source files. */
         "experimentalDecorators": true, /* Enable experimental support for TC39 stage 2 draft decorators. */
 		"useDefineForClassFields": true, /* Emit ECMAScript-standard-compliant class fields. */
+		"declaration": true, /* Enable emitting declaration files. */
 		
 		"skipLibCheck": true, /* Skip type checking all .d.ts files. */
         
