@@ -1,9 +1,9 @@
 import type { ClientEvents } from 'discord.js';
 
-import type { IEventWrapper } from '#types/index.js';
+import type { TDecoratedEvent } from '#types/index.js';
 
 export interface IEventStore {
-	storage: Map<keyof ClientEvents, IEventWrapper<keyof ClientEvents>>;
+	storage: Map<keyof ClientEvents, TDecoratedEvent>;
 
-	add(event: IEventWrapper<keyof ClientEvents>): void;
+	add(event: TDecoratedEvent): void;
 }
