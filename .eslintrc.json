@@ -40,6 +40,13 @@
                 "varsIgnorePattern": "^_"
             }
         ],
+        "@typescript-eslint/explicit-function-return-type": ["error"],
+        "@typescript-eslint/no-explicit-any": [
+            "error",
+            {
+                "ignoreRestArgs": true
+            }
+        ],
         "indent": [
             "error",
             "tab",
