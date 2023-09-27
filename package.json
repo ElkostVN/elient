@@ -1,7 +1,7 @@
 {
-  "name": "@elkost/discord-template",
+  "name": "@elkost/elient",
   "version": "0.1.1",
-  "description": "",
+  "description": "Discord bot template",
   "main": "bin/index.js",
   "scripts": {
     "start": "node bin/index.js",
@@ -10,10 +10,21 @@
     "build:develop": "tsc --watch",
     "postinstall": "pnpm run build"
   },
+  "engines": {
+    "node": "^20.6.1",
+    "pnpm": "^8.7.6"
+  },
   "author": {
     "email": "k.r.ilyin@gmail.com",
     "name": "Elkost"
   },
+  "keywords": [
+    "elient",
+    "discord.js",
+    "discord.js.org",
+    "bot",
+    "typescript"
+  ],
   "license": "ISC",
   "type": "module",
   "imports": {
@@ -42,5 +53,8 @@
     "eslint-plugin-sonarjs": "^0.21.0",
     "nodemon": "^3.0.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0"
   }
 }
