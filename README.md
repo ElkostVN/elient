@@ -13,6 +13,30 @@ git clone git@github.com:ElkostVN/elkost-discord-template.git
 ```
 cd <app-name> && pnpm install
 ```
+- Usage
+- `index.js`
+```
+import './your-events/your-event-file.js'
+import { Elient } from 'elient';
+
+const elient = new Elient({
+  token: <your-token',
+  ...Discord Client Options
+})
+
+await client.authenticate()
+```
+- `your-events/ready.js`
+```
+import { Event } from 'elient'
+
+@Event({ name: 'ready', mode: 'on' })
+export class ReadyEvent extends AEvent<'ready'> {
+  public override async execute (client: Client<true>): Promise<void> {
+    console.log(`Logged as ${client.user.username}`);
+  }
+}
+```
 
 ## Project Structure
 The folder structure of this app is explained below:
@@ -21,7 +45,6 @@ The folder structure of this app is explained below:
 | ----------------------| --------------------------------------------------------------------------------------------- |
 | **node_modules**      | Contains all npm dependencies
 | **src**               | Contains template source code
-| **--components**      | Contains all components of template 
 | **--lib**             | Contains all libraries of template
 | **--types**           | Contains all types of template
 | **--utils**           | Contains all utilities
